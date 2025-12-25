@@ -312,10 +312,15 @@ p{
   }
 }
 
-@media screen and (min-width:321px) and (max-width:475px){
+
+
+/* ================= MOBILE VIEW ================= */
+@media screen and (max-width:475px){
+
   *{
     overflow-x: hidden;
   }
+
   .body_div{
     width: 100%;
     height: auto;
@@ -323,98 +328,116 @@ p{
     flex-direction: column;
   }
 
-  .navbar_div {
+  .navbar_div{
     height: auto;
     font-size: 1em;
   }
 
-  .navbar_sub {
+  .navbar_sub{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  .left_body_div{
-    width: 100%;
-  }
+  .left_body_div,
   .right_body_div{
     width: 100%;
-    /* padding:0px; */
+  }
+
+  .right_body_div{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
   }
+
   .right_body_div_img{
     width: 90%;
     margin-top: 15px;
     object-fit: cover;
   }
-  .left_bottom_subdiv{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+
   .bottom_div{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
   }
+
   .left_bottom_div{
     width: 100%;
     display: flex;
     flex-direction: column;
   }
+
+  .left_bottom_subdiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left_bottom_subdiv div,
   .left_bottom_subdivtwo{
     width: 100%;
-  }  
-.card_div{
-  width: 90%;
-  font-size: small;
-  /* margin: -30px; */
-  
-}
-.left_body_description{
-  font-size: 1em;
-}
-.arrow{
-  width: 20%;
-}
-.left_body_heading{
-  font-size: 2em;
-}
-.arrow img{
-  font-size: 2em;
-}
-.body_button {
+  }
+
+  /* 🔥 IMPORTANT FIX STARTS HERE */
+
+  .right_bottom_div{
+    width: 100%;
+    position: relative;        /* anchor for card */
+    display: flex;
+    justify-content: center;   /* center horizontally */
+  }
+
+  .card_div{
+    position: relative;        /* 🔥 override absolute ONLY on mobile */
+    width: 90%;
+    margin: 20px auto;         /* 🔥 center */
+    font-size: small;
+  }
+
+  /* 🔥 IMPORTANT FIX ENDS HERE */
+
+  .left_body_heading{
+    font-size: 2em;
+  }
+
+  .left_body_description{
+    font-size: 1em;
+  }
+
+  .body_button{
     font-size: 1em;
     margin-top: 10px;
   }
-  .right_bottom_div {
+
+  .arrow{
+    width: 20%;
+  }
+
+  .arrow img{
     width: 100%;
-                
   }
 }
+
 
 
 @media screen and (max-width:319px){
 
-  /* keep everything in normal flow */
   .right_bottom_div{
-    position: static;   /* override ONLY on mobile */
+    position: relative;   /* anchor for absolute card */
+    width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 200px;    /* ensures visible space */
   }
 
   .card_div{
-    position: static;   /* override ONLY on mobile */
+    position: absolute;   /* keep absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
-    margin: 20px auto;
     font-size: small;
   }
 }
