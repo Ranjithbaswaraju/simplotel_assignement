@@ -114,7 +114,8 @@ overflow-x: hidden;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute;
+   */
   
 
 }
@@ -138,9 +139,7 @@ p{
 .bottom_div {
   width: 100%;
   height: 650px;
-  
   display: flex;
-
 }
 .left_bottom_div {
   width: 50%;
@@ -153,6 +152,7 @@ p{
   gap: 20px;
   
   align-items: center;
+  box-sizing: border-box;
   /* background-color: red; */
 
   
@@ -312,7 +312,7 @@ p{
   }
 }
 
-@media screen and (min-width:319px) and (max-width:475px){
+@media screen and (min-width:321px) and (max-width:475px){
   *{
     overflow-x: hidden;
   }
@@ -374,7 +374,7 @@ p{
 .card_div{
   width: 90%;
   font-size: small;
-  margin: -30px;
+  /* margin: -30px; */
   
 }
 .left_body_description{
@@ -400,4 +400,21 @@ p{
 }
 
 
+@media screen and (max-width:319px){
 
+  /* keep everything in normal flow */
+  .right_bottom_div{
+    position: static;   /* override ONLY on mobile */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card_div{
+    position: static;   /* override ONLY on mobile */
+    width: 90%;
+    margin: 20px auto;
+    font-size: small;
+  }
+}
