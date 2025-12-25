@@ -11,7 +11,7 @@ overflow-x: hidden;
   background: linear-gradient(
   to right,
   #FFF7C2 20%,  
-  #f791ec 80% 
+  #fbbff5 80% 
 ); 
 }
  .navbar_div{
@@ -69,7 +69,7 @@ overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
   
     letter-spacing: .25ch;;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: bold;
 }
 .left_body_description{
@@ -118,6 +118,10 @@ overflow-x: hidden;
    */
   
 
+}
+
+.navbar_div div :hover {
+  font-size: 30px;
 }
 
 p{
@@ -399,9 +403,9 @@ p{
 
   /* 🔥 IMPORTANT FIX ENDS HERE */
 
-  .left_body_heading{
+  /* .left_body_heading{
     font-size: 2em;
-  }
+  } */
 
   .left_body_description{
     font-size: 1em;
@@ -419,6 +423,129 @@ p{
   .arrow img{
     width: 100%;
   }
+}
+/* ================= MOBILE VIEW UP TO 475px ================= */
+@media screen and (max-width:475px){
+
+  *{
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* BODY */
+  .body_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* NAVBAR */
+  .navbar_div{
+    height: auto;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar_sub{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* LEFT & RIGHT BODY */
+  .left_body_div,
+  .right_body_div{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .right_body_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right_body_div_img{
+    width: 90%;
+    max-width: 100%;
+    margin-top: 15px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* BOTTOM SECTIONS */
+  .bottom_div,
+  .left_bottom_div,
+  .left_bottom_subdiv,
+  .left_bottom_subdivtwo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;   /* reduce padding for larger mobiles */
+    margin: 0;
+    gap: 8px;
+  }
+
+  .left_bottom_subdiv div{
+    padding: 0;
+    margin: 0;
+  }
+
+  /* CARD CENTERING */
+  .right_bottom_div{
+    width: 100%;
+    position: relative; 
+    display: flex;
+    justify-content: center;  /* horizontal center */
+  }
+
+  .card_div{
+    position: relative;
+    width: 90%;
+    margin: 20px auto;  /* center horizontally */
+    font-size: small;
+  }
+
+  /* TEXT STYLING */
+  .left_body_heading{
+    font-size: 1.8em;
+  }
+
+  .left_body_description{
+    font-size: 1em;
+  }
+
+  .body_button{
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .arrow{
+    width: 20%;
+  }
+
+  .arrow img{
+    width: 30%;
+  }
+
+  /* IMAGES IN LEFT BOTTOM DIV */
+  .left_bottom_subdivimg,
+  .left_bottom_subdivtwo_img {
+    width: 100%;           /* fill container horizontally */
+    height: auto;          /* preserve aspect ratio */
+    max-height: 220px;     /* adjust for 425-475px view */
+    display: block;
+    object-fit: cover;     /* crop if needed but maintain aspect */
+  }
+
 }
 
 
