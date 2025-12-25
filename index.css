@@ -239,7 +239,6 @@ p{
     min-height: 600px;
   }
 
-  /* 1. Main container: Changed to height auto to prevent overlap */
   .bottom_div {
     width: 100%;
     display: flex;
@@ -271,19 +270,17 @@ p{
   .body_button {
     font-size: 1.1em;
   }
-
-  /* 2. Top half (Images): Ensure they don't have excessive padding */
   .left_bottom_div {
     display: flex;
     width: 100%;
     padding: 20px;
-    box-sizing: border-box; /* Critical for keeping width at 100% */
+    box-sizing: border-box;
   }
 
   .left_bottom_subdiv,
   .left_bottom_subdivtwo {
     width: 50%;
-    height: 450px; /* Reduced fixed height */
+    height: 450px; 
   }
 
   .left_bottom_subdivimg,
@@ -293,15 +290,15 @@ p{
     object-fit: cover;
   }
 
-  /* 3. Bottom half (Pink Area): Force it below the images */
+ 
   .right_bottom_div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;      /* Changed from 50% to auto */
-    padding: 60px 0;   /* Gives the card vertical breathing room */
-    /* background-color: #ff80ab; Adjust to match your pink precisely */
+    height: auto;      
+    padding: 60px 0;   
+    
     position: relative;
     top: 0;            
   }
@@ -351,7 +348,8 @@ p{
     
   }
   .right_body_div_img{
-    width: 95%;
+    width: 90%;
+    margin-top: 15px;
     object-fit: cover;
   }
   .left_bottom_subdiv{
@@ -364,7 +362,6 @@ p{
     height: auto;
     display: flex;
     flex-direction: column;
-
   }
   .left_bottom_div{
     width: 100%;
@@ -374,24 +371,31 @@ p{
   .left_bottom_subdivtwo{
     width: 100%;
   }  
-
 .card_div{
+  width: 90%;
   font-size: small;
+  margin: -30px;
+  
 }
 .left_body_description{
   font-size: 1em;
 }
-
 .arrow{
   width: 20%;
 }
 .left_body_heading{
   font-size: 2em;
 }
-
 .arrow img{
   font-size: 2em;
 }
-
+.body_button {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  .right_bottom_div {
+    width: 100%;
+                
+  }
 }
 
