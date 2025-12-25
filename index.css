@@ -1,0 +1,285 @@
+*{
+  box-sizing: border-box;
+}
+body{
+padding: 0px;
+margin: 0px;
+overflow-x: hidden;
+}
+.parent_div{
+  width: 100%;  
+  background: linear-gradient(
+  to right,
+  #FFF7C2 20%,  
+  #f791ec 80% 
+); 
+}
+ .navbar_div{
+  width: 100%;
+  height: 70px;
+  background-color: #f78075;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.navbar_sub{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_image{
+  height: 1.6em;   /* SAME HEIGHT AS TEXT */
+}
+
+.body_div {
+  width: 100%;
+  height: 800px;
+  display: flex;
+}
+.left_body_div {
+  width: 50%;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.body_button{
+  background-color: #ef8278; 
+    height: 10%;
+    width: 35%;
+    color: white;
+    font-size: large;
+    /* font-family: sans-serif; */
+      font-family: "Montserrat", sans-serif;
+    border: none;
+    
+}
+.left_body_heading{
+    /* font-family: "Poppins", system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; */
+        /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+  
+    letter-spacing: .25ch;;
+    font-size: 4em;
+    font-weight: bold;
+}
+.left_body_description{
+         font-family: "Montserrat", sans-serif;
+        line-height: 35px;
+        font-size: 1.2em;
+}
+.left_body_subdiv{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.right_body_div {
+  width: 50%;
+  height: 100%;
+
+}
+.right_body_div_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.right_bottom_div{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+.card_div{
+  width: 80%;
+  /* background-color: #ef8278; */
+  background-color: #f78075;
+  
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  
+
+}
+
+p{
+  margin: 0;
+  /* font-family: "Poppins", system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; */
+      font-family: "Montserrat", sans-serif;
+  font-size: larger;
+}
+.arrow{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.arrow img{
+    width: 30%;
+    height: 100%;
+}
+.bottom_div {
+  width: 100%;
+  height: 650px;
+  
+  display: flex;
+
+}
+.left_bottom_div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding: 50px;
+
+
+  /* margin: 10px; */
+  gap: 20px;
+  
+  align-items: center;
+  /* background-color: red; */
+
+  
+}
+
+
+.left_bottom_subdiv div{
+  width: 100%;
+  height: 50%;
+  /* background-color: white; */
+}
+
+
+
+.left_bottom_subdiv{
+  width: 50%;
+  height: 100%;
+  /* background-color: navajowhite; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:5px;
+  box-sizing: border-box;
+  /* padding: 10px; */
+  
+}
+
+.left_bottom_subdivimg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.left_bottom_subdivtwo{
+  width: 50%;
+  height: 100%;
+
+}
+
+.left_bottom_subdivtwo_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+
+  .navbar_div{
+    height: 70px;
+    font-size: 1.4em;
+  }
+
+  .navbar_sub{
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar_image{
+    height: 1.6em;
+    width: auto;
+  }
+
+  .left_body_heading{
+     font-size: 2.5em;
+}
+.card_div{
+  width: 90%;
+}
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* .navbar_div{
+    height: 70px;
+    font-size: 1.4em;
+  }
+
+  .navbar_sub{
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar_image{
+    height: 1.6em;
+    width: auto;
+  }
+
+  .left_body_heading{
+     font-size: 2.5em;
+}
+.card_div{
+  width: 90%;
+} */
+.navbar_div{
+    height:auto;
+    font-size: 1.2em;
+    
+  }
+  .navbar_sub{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+
+  }
+  .navbar_sub div{
+    border: 2px solid red;
+  }
+
+
+
+}
+
