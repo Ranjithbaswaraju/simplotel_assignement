@@ -312,7 +312,7 @@ p{
   }
 }
 
-@media screen and (max-width:475px){
+@media screen and (min-width:0px)and (max-width:475px){
   *{
     overflow-x: hidden;
   }
@@ -398,4 +398,6 @@ p{
                 
   }
 }
+
+
 
