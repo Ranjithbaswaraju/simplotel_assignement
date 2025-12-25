@@ -199,12 +199,6 @@ p{
   object-fit: cover;
 }
 
-
-
-
-
-
-
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
@@ -236,50 +230,172 @@ p{
 
 }
 
-@media screen and (max-width: 768px) {
 
-  /* .navbar_div{
-    height: 70px;
-    font-size: 1.4em;
+
+ @media screen and (min-width: 425px) and (max-width: 768px) {
+
+  .body_div {
+    height: 600px;
+    min-height: 600px;
   }
 
-  .navbar_sub{
-    width: 80%;
-    height: 100%;
-    justify-content: space-between;
+  /* 1. Main container: Changed to height auto to prevent overlap */
+  .bottom_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    height: auto; 
+    gap: 0;
   }
 
-  .navbar_image{
-    height: 1.6em;
-    width: auto;
-  }
-
-  .left_body_heading{
-     font-size: 2.5em;
-}
-.card_div{
-  width: 90%;
-} */
-.navbar_div{
-    height:auto;
+  .navbar_div {
+    height: auto;
     font-size: 1.2em;
-    
   }
-  .navbar_sub{
+
+  .navbar_sub {
+    width: 90%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .left_body_heading {
+    font-size: 2.5em;
+  }
+
+  .left_body_description {
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+
+  .body_button {
+    font-size: 1.1em;
+  }
+
+  /* 2. Top half (Images): Ensure they don't have excessive padding */
+  .left_bottom_div {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Critical for keeping width at 100% */
+  }
+
+  .left_bottom_subdiv,
+  .left_bottom_subdivtwo {
+    width: 50%;
+    height: 450px; /* Reduced fixed height */
+  }
+
+  .left_bottom_subdivimg,
+  .left_bottom_subdivtwo_img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+  }
+
+  /* 3. Bottom half (Pink Area): Force it below the images */
+  .right_bottom_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;      /* Changed from 50% to auto */
+    padding: 60px 0;   /* Gives the card vertical breathing room */
+    /* background-color: #ff80ab; Adjust to match your pink precisely */
+    position: relative;
+    top: 0;            
+  }
+
+ 
+  .card_div {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width:475px){
+  *{
+    overflow-x: hidden;
+  }
+  .body_div{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+  }
+
+  .navbar_div {
+    height: auto;
+    font-size: 1em;
+  }
+
+  .navbar_sub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .left_body_div{
+    width: 100%;
+  }
+  .right_body_div{
+    width: 100%;
+    /* padding:0px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
-
+  }
+  .right_body_div_img{
+    width: 95%;
+    object-fit: cover;
+  }
+  .left_bottom_subdiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 
   }
-  .navbar_sub div{
-    border: 2px solid red;
+  .left_bottom_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .left_bottom_subdivtwo{
+    width: 100%;
   }
 
+  
+.right_bottom_div{
 
+}
+.card_div{
+  font-size: small;
+}
+.left_body_description{
+  font-size: 1em;
+}
+
+.arrow{
+  width: 20%;
+}
+.left_body_heading{
+  font-size: 2em;
+}
+
+.arrow img{
+  font-size: 2em;
+}
 
 }
 
