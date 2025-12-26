@@ -197,15 +197,15 @@ p{
 }
 
 .left_bottom_subdiv{
-  /* background-color: red; */
+  
   width: 100%;
 }
 .left_bottom_subdivtwo{
   width:100%;
 }
 .left_bottom_subdivtwo_img{
+  height: 100;
   width: 100%;
-  object-fit: cover;
 }
 }
  @media screen and (min-width: 425px) and (max-width: 768px) {
