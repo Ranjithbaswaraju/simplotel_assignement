@@ -1,4 +1,3 @@
-
 body{
 padding: 0px;
 margin: 0px;
@@ -15,7 +14,7 @@ box-sizing: border-box;
 }
  .navbar_div{
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: #f78075;
   display: flex;
   justify-content: center;
@@ -26,7 +25,7 @@ box-sizing: border-box;
   font-weight: bold;
 }
 .navbar_sub{
-  width: 70%;
+  width: 75%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -43,10 +42,9 @@ box-sizing: border-box;
 .left_body_div {
   width: 50%;
   height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .body_button{
   background-color: #ef8278; 
@@ -65,7 +63,7 @@ box-sizing: border-box;
 }
 .left_body_description{
     font-family: "Montserrat", sans-serif;
-    line-height: 35px;
+    line-height: 30px;
     font-size: 1.2em;
 }
 .left_body_subdiv{
@@ -94,7 +92,7 @@ box-sizing: border-box;
   position: relative;
 }
 .card_div{
-  width: 80%;
+  width: 65%;
   background-color: #f78075;
   padding: 20px;
   box-sizing: border-box;
@@ -102,9 +100,12 @@ box-sizing: border-box;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  font-size: small;
+  height: 40%
+
 }
 .navbar_div div :hover {
-  font-size: 30px;
+  font-size: 25px;
 }
 p{
   margin: 0;
@@ -138,77 +139,83 @@ p{
 .left_bottom_subdiv div{
   width: 100%;
   height: 50%;
-
 }
 .left_bottom_subdiv{
   width: 50%;
   height: 100%;
- 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap:5px;
-  box-sizing: border-box;
+  justify-content: space-around;
+  box-sizing: border-box; 
 }
-
 .left_bottom_subdivimg{
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
+  height: 98%;
+  object-fit: cover; 
 }
-
 .left_bottom_subdivtwo{
   width: 50%;
   height: 100%;
 
 }
-
 .left_bottom_subdivtwo_img{
   width: 100%;
-  height: 100%;
+  height: 99%;
   object-fit: cover;
 }
-
-
 @media screen and (max-width: 1024px) {
-
-  .navbar_div{
-    height: 70px;
-    font-size: 1.4em;
-  }
-
-  .navbar_sub{
+.navbar_div{
+    height: 40px;
+    font-size: 1.3em;
+}
+.left_body_description{
+  line-height: 25px;
+width: 100%;
+text-align: justify;
+}
+.body_button{
+  margin-top: 50px;
+}
+.navbar_sub{
     width: 80%;
     height: 100%;
     justify-content: space-between;
-  }
-
-  .navbar_image{
+    
+}
+.navbar_image{
     height: 1.6em;
     width: auto;
-  }
-
-  .left_body_heading{
+}
+.left_body_heading{
      font-size: 2.5em;
 }
+.body_div{
+  height: 80%;
+}
+.right_body_div{
+  height: 100%;
+}
+.right_body_div_img{
+  height: 100%;
+}
 .card_div{
-  width: 90%;
+  width: 70%;
+  font-size: small; 
 }
-
-.left_bottom_subdiv{
-  
-  width: 100%;
+.bottom_div{
+  height:510px
 }
-.left_bottom_subdivtwo{
-  width:100%;
+.body_div{
+  height: 510px
 }
-.left_bottom_subdivtwo_img{
-  height: 100;
-  width: 100%;
+.left_bottom_div{
+  height: 90%;
+}
+.right_bottom_div{
+  height: 90%;
 }
 }
- @media screen and (min-width: 425px) and (max-width: 768px) {
+ @media screen and (min-width: 426px) and (max-width: 769px) {
   .body_div {
     height: 600px;
     min-height: 600px;
@@ -224,22 +231,18 @@ p{
     height: auto;
     font-size: 1.2em;
   }
-
   .navbar_sub {
     width: 90%;
     display: flex;
     gap: 10px;
   }
-
   .left_body_heading {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
-
   .left_body_description {
     font-size: 1.1em;
-    line-height: 1.4em;
+    text-align:start; 
   }
-
   .body_button {
     font-size: 1.1em;
   }
@@ -249,21 +252,18 @@ p{
     padding: 20px;
     box-sizing: border-box;
   }
-
   .left_bottom_subdiv,
   .left_bottom_subdivtwo {
     width: 50%;
     height: 450px; 
+    gap: 5px;
   }
-
   .left_bottom_subdivimg,
   .left_bottom_subdivtwo_img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-
- 
+    object-fit: cover; 
+  } 
   .right_bottom_div {
     width: 100%;
     display: flex;
@@ -271,132 +271,105 @@ p{
     align-items: center;
     height: auto;      
     padding: 60px 0;   
-    
     position: relative;
     top: 0;            
   }
-
- 
   .card_div {
     width: 70%;
     position: relative;
     margin: 0 auto;
     z-index: 10;
+    
   }
 }
-
-
-
-
+.body_button{
+  margin-top: 20px;
+}
 @media screen and (max-width:475px){
-
   *{
     overflow-x: hidden;
   }
-
   .body_div{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
   }
-
   .navbar_div{
     height: auto;
     font-size: 1em;
   }
-
   .navbar_sub{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
   .left_body_div,
   .right_body_div{
     width: 100%;
   }
-
   .right_body_div{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .right_body_div_img{
     width: 100%;
     
     object-fit: cover;
   }
-
   .bottom_div{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
   }
-
   .left_bottom_div{
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-
   .left_bottom_subdiv{
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-
   .left_bottom_subdiv div,
   .left_bottom_subdivtwo{
     width: 100%;
   }
-
-
   .right_bottom_div{
     width: 100%;
     position: relative;       
     display: flex;
     justify-content: center;   
   }
-
   .card_div{
     position: relative;        
     width: 90%;
     margin: 20px auto;         
     font-size: small;
   }
-
- 
-
   .left_body_description{
     font-size: 1em;
   }
-
   .body_button{
     font-size: 1em;
     margin-top: 10px;
   }
-
   .arrow{
     width: 20%;
   }
-
   .arrow img{
     width: 100%;
   }
 }
-
 @media screen and (max-width:475px){
-
   *{
     overflow-x: hidden;
     box-sizing: border-box;
   }
-
-  /* BODY */
   .body_div{
     width: 100%;
     height: auto;
@@ -405,8 +378,6 @@ p{
     padding: 0;
     margin: 0;
   }
-
-  
   .navbar_div{
     height: auto;
     font-size: 1.2em;
@@ -414,7 +385,6 @@ p{
     margin: 0;
     
   }
-
   .navbar_sub{
     width: 100%;
     display: flex;
@@ -425,32 +395,22 @@ p{
     margin: 0;
     
   }
-  .navbar_sub div{
-    border-bottom: 1px solid black;
-    width: 100%;
-    text-align: center;
-  }
-
-  
   .left_body_div,
   .right_body_div{
     width: 100%;
     padding: 0px;
     margin: 0px;
-    /* background-color: red; */
+  
   }
-
   .left_body_subdiv{
     width: 92%;
     text-align: justify;
   }
-
   .right_body_div{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .right_body_div_img{
     width: 93%;
     max-width: 100%;
@@ -458,8 +418,6 @@ p{
     object-fit: cover;
     display: block;
   }
-
-  /* BOTTOM SECTIONS */
   .bottom_div,
   .left_bottom_div,
   .left_bottom_subdiv,
@@ -471,51 +429,40 @@ p{
     margin: 0;
     gap: 8px;
   }
-
   .left_bottom_subdiv div{
     padding: 0;
     margin: 0;
   }
 
-  /* CARD CENTERING */
-  .right_bottom_div{
+    .right_bottom_div{
     width: 100%;
     position: relative; 
     display: flex;
     justify-content: center; 
   }
-
   .card_div{
     position: relative;
     width: 96%;
     margin: 20px auto;  
     font-size: small;
   }
-
-  /* TEXT STYLING */
   .left_body_heading{
     font-size: 1.8em;
   }
-
   .left_body_description{
     font-size: 1em;
   }
-
   .body_button{
     font-size: 1em;
     margin-top: 10px;
     height: 30px
   }
-
   .arrow{
     width: 20%;
   }
-
   .arrow img{
     width: 30%;
   }
-
- 
   .left_bottom_subdivimg,
   .left_bottom_subdivtwo_img {
     width: 100%;           
@@ -524,18 +471,14 @@ p{
     display: block;
     object-fit: cover;     
   }
-
 }
-
 @media screen and (max-width:319px){
-
   .right_bottom_div{
     position: relative;   
     width: 100%;
     height: auto;
     min-height: 200px;   
   }
-
   .card_div{
     position: absolute;   
     top: 50%;
