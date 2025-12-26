@@ -406,9 +406,16 @@ p{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     padding: 0;
     margin: 0;
+    
+  }
+  .navbar_sub div{
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
   }
 
   
@@ -499,8 +506,6 @@ p{
   }
 
 }
-
-
 
 @media screen and (max-width:319px){
 
